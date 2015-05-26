@@ -21,7 +21,7 @@ public class OrderCreation {
 
     public void handle(String orderCreationEventUrl) throws IOException, JAXBException {
 
-        URL url = new URL(orderCreationEventUrl) ;
+        URL url = new URL(orderCreationEventUrl);
         try (InputStream inputStream = url.openStream()) {
 
             OrderEvent orderEvent = parser.parse(inputStream);

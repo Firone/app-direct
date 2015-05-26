@@ -36,12 +36,12 @@ Then, you juste have to checkout the project from github, and use those commands
 
 This application is deploy here :
 
-    https://stormy-crag-4518.herokuapp.com/
+    https://fast-escarpment-8142.herokuapp.com/
 
 To test an event, you can send a request to this url
 
-    https://stormy-crag-4518.herokuapp.com/api/create?token=dummyOrder&eventUrl=https%3A%2F%2Fwww.appdirect.com%2Fapi%2Fintegration%2Fv1%2Fevents%2FdummyOrder
+    https://fast-escarpment-8142.herokuapp.com/api/create?token=dummyOrder&eventUrl=https%3A%2F%2Fwww.appdirect.com%2Fapi%2Fintegration%2Fv1%2Fevents%2FdummyOrder
 
 Now, you can see received events on the home page
 
-    https://stormy-crag-4518.herokuapp.com/
+    https://fast-escarpment-8142.herokuapp.com/
