@@ -15,6 +15,8 @@ public class OrderEvent {
     private String returnUrl;
     @XmlElement(name = "type")
     private Type type;
+    @XmlElement(name = "payload")
+    private Payload payload;
 
     public User getUser() {
         return user;
@@ -38,6 +40,14 @@ public class OrderEvent {
 
     public void setType(Type type) {
         this.type = type;
+    }
+
+    public Payload getPayload() {
+        return payload;
+    }
+
+    public void setPayload(Payload payload) {
+        this.payload = payload;
     }
 
     enum Type {

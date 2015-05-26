@@ -18,6 +18,7 @@
             <p>
                 Event type : ${orderEvent.type}<br/>
                 By ${orderEvent.user.firstName} with email ${orderEvent.user.email} with uudi ${orderEvent.user.uuid}<br/>
+                Edition code of the order : ${orderEvent.payload.order.editionCode}<br/>
                 Return url : ${orderEvent.returnUrl}
             </p>
         </c:forEach>

@@ -27,5 +27,6 @@ public class OrderEventParserTest {
 
         assertThat(orderEvent.getUser().getEmail(), is("test-email+creator@appdirect.com"));
         assertThat(orderEvent.getUser().getFirstName(), is("DummyCreatorFirst"));
+        assertThat(orderEvent.getPayload().getOrder().getEditionCode(), is("BASIC"));
     }
 }

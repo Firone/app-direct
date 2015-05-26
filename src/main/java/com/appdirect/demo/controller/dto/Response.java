@@ -1,4 +1,4 @@
-package com.appdirect.demo.controller;
+package com.appdirect.demo.controller.dto;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
