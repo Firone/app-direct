@@ -3,8 +3,8 @@
 This is the AppDirect challenge application.
 It's built with spring-boot and maven with JDK 8;
 
-Events "SUBSCRIPTION_ORDER" are received and process. All received events are visible on the home page.
-I don't implement OpenId, so only events can be received.
+Events "SUBSCRIPTION_ORDER" are received and processed. All received events are visible on the home page.
+I didn't implement OpenId, so only events can be received.
 
 ## Generate a war
 
@@ -23,8 +23,11 @@ Use spring boot plugin to start application locally
 
 ###Heroku
 
-To deploy this application on Heroku, you need to setup Heroku : https://devcenter.heroku.com/articles/getting-started-with-java#introduction
-After this, just to checkout the project from github, and use these commands :
+To deploy this application on Heroku, you need to setup Heroku
+
+    https://devcenter.heroku.com/articles/getting-started-with-java#introduction
+
+Then, you juste have to checkout the project from github, and use those commands :
 
     heroku create
     git push heroku master

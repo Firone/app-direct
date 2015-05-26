@@ -1,12 +1,12 @@
 ##Minor problem in api
 
-There is two minor problem in the api.
+There is two minors problems in the api.
 
-URL notification seems not accepting port number.
+URL notifications doesn't seem to accept port number configuration.
 The system accepts this url, but event is never sent.
 Is it a security or a bug ?
 
-    http://1.1.1.1:111/api/create?token={token}&eventUrl={eventUrl}
+    http://1.1.1.1:8080/api/create?token={token}&eventUrl={eventUrl}
 
 A dead link is present in french text on the page "Tester les URLs de Notification".
 The "Developer Event API" link is dead.
