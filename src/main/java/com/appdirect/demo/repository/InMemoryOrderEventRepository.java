@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public class InMemoryOrderEventRepository implements OrderEventRepository {
 
-    private final List<OrderEvent> orderEvents = Collections.synchronizedList(new ArrayList<>());
+    private static final List<OrderEvent> orderEvents = Collections.synchronizedList(new ArrayList<>());
 
     @Override
     public void save(OrderEvent orderEvent) {
