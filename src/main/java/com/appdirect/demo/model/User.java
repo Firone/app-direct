@@ -7,28 +7,10 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class User {
 
-    @XmlElement(name = "uuid")
-    private String uuid;
-    @XmlElement(name = "email")
-    private String email;
     @XmlElement(name = "firstName")
     private String firstName;
-
-    public String getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    @XmlElement(name = "openId")
+    private String openId;
 
     public String getFirstName() {
         return firstName;
@@ -36,5 +18,41 @@ public class User {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getOpenId() {
+        return openId;
+    }
+
+    public void setOpenId(String openId) {
+        this.openId = openId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+
+        User user = (User) o;
+
+        if (firstName != null ? !firstName.equals(user.firstName) : user.firstName != null) return false;
+        if (openId != null ? !openId.equals(user.openId) : user.openId != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstName != null ? firstName.hashCode() : 0;
+        result = 31 * result + (openId != null ? openId.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                ", firstName='" + firstName + '\'' +
+                ", openId='" + openId + '\'' +
+                '}';
     }
 }

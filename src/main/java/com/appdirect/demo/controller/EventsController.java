@@ -15,16 +15,16 @@ import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 
 @Controller
 @RequestMapping(value = "/api")
-public class CatchOrderEventsController {
+public class EventsController {
 
-    private static final Logger logger = LoggerFactory.getLogger(CatchOrderEventsController.class);
+    private static final Logger logger = LoggerFactory.getLogger(EventsController.class);
 
     @Autowired
     private OrderCreation orderCreation;
 
     @RequestMapping(method = RequestMethod.GET, value = "/create", produces = {APPLICATION_XML_VALUE})
     @ResponseBody
-    public Response create(
+    public Response createOrder(
             @RequestParam("eventUrl") String eventUrl,
             @RequestParam("token") String token) {
 
