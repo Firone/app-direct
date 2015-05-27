@@ -41,6 +41,6 @@ To test an event, you can send a request to this url
 
     https://fast-escarpment-8142.herokuapp.com/api/create?token=dummyOrder&eventUrl=https%3A%2F%2Fwww.appdirect.com%2Fapi%2Fintegration%2Fv1%2Fevents%2FdummyOrder
 
-Now, you can see received events on the home page
+Now, you can see received events on the home page (you will have to log you to see this page)
 
     https://fast-escarpment-8142.herokuapp.com/
