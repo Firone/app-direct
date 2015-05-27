@@ -4,6 +4,7 @@ This is the AppDirect challenge application.
 It's built with spring-boot and maven with JDK 8;
 
 Events "SUBSCRIPTION_ORDER" are received and processed. All received events are visible on the home page.
+It's needed to be logged in to see home page, but anyone can send event.
 
 ## Generate a war
 
